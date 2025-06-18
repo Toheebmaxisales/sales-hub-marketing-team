@@ -1,11 +1,10 @@
-
 import { User } from 'lucide-react';
 
 const TeamSection = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Sarah Johnson",
+      name: "Ismail Talha",
       role: "Digital Marketing Strategist",
       description: "Specializes in ecommerce growth and conversion optimization with 6+ years of experience.",
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"

@@ -23,6 +23,27 @@ const TeamSection = () => {
       role: "SEO & Content Specialist",
       description: "Drives organic traffic growth through strategic SEO and compelling content creation.",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      id: 4,
+      name: "David Thompson",
+      role: "Shopify Development Expert",
+      description: "Builds high-converting Shopify stores and custom solutions for ecommerce success.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      id: 5,
+      name: "Jessica Martinez",
+      role: "Social Media Manager",
+      description: "Creates engaging social media strategies that drive brand awareness and customer engagement.",
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      id: 6,
+      name: "Alex Kim",
+      role: "PPC & Analytics Specialist",
+      description: "Maximizes ROI through data-driven Google Ads and Facebook advertising campaigns.",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     }
   ];
 

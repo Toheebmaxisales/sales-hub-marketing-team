@@ -1,3 +1,4 @@
+
 import { User } from 'lucide-react';
 
 const TeamSection = () => {
@@ -7,42 +8,42 @@ const TeamSection = () => {
       name: "Ismail Talha",
       role: "Digital Marketing Strategist",
       description: "Specializes in ecommerce growth and conversion optimization with 6+ years of experience.",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       id: 2,
       name: "Michael Chen",
       role: "Web Design Lead",
       description: "Expert in Shopify, Wix, and custom website design with a focus on user experience.",
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       id: 3,
       name: "Emily Rodriguez",
       role: "SEO & Content Specialist",
       description: "Drives organic traffic growth through strategic SEO and compelling content creation.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       id: 4,
       name: "David Thompson",
       role: "Shopify Development Expert",
       description: "Builds high-converting Shopify stores and custom solutions for ecommerce success.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       id: 5,
       name: "Jessica Martinez",
       role: "Social Media Manager",
       description: "Creates engaging social media strategies that drive brand awareness and customer engagement.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       id: 6,
       name: "Alex Kim",
       role: "PPC & Analytics Specialist",
       description: "Maximizes ROI through data-driven Google Ads and Facebook advertising campaigns.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     }
   ];
 

@@ -1,18 +1,18 @@
 
 const ToolsSection = () => {
   const tools = [
-    { name: 'Shopify', logo: 'https://cdn.worldvectorlogo.com/logos/shopify.svg' },
-    { name: 'Wix', logo: 'https://static.wixstatic.com/media/9ab0d1_f80a2ccc981548ec84ef6bc06e86afba~mv2.png' },
-    { name: 'Etsy', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Etsy-Emblem.png' },
-    { name: 'Google Ads', logo: 'https://www.gstatic.com/ads/landing/google_ads_logo.png' },
-    { name: 'Meta Ads', logo: 'https://about.fb.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png' },
-    { name: 'Klaviyo', logo: 'https://www.klaviyo.com/wp-content/uploads/2023/03/Klaviyo_Logo_Black.png' },
-    { name: 'Canva', logo: 'https://1000logos.net/wp-content/uploads/2021/04/Canva-logo.png' },
-    { name: 'WordPress', logo: 'https://s.w.org/images/logos/wordpress-logo-32-blue.png' },
-    { name: 'Mailchimp', logo: 'https://eep.io/images/yzco4xsimv0y/5HyFVpgm7w5lJD0VzLjLnO/94e36f6cdc0ffc9b97acac7b6b9de9b6/MailchimpAsset_1.png' },
-    { name: 'HubSpot', logo: 'https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png' },
-    { name: 'Google Analytics', logo: 'https://www.google.com/analytics/static/4d7b4e8b0e36c2c61ec1ada04e7ae6cc_google-analytics-logo.png' },
-    { name: 'Semrush', logo: 'https://www.semrush.com/lp/sem/images/logos/semrush-logo.svg' }
+    { name: 'Shopify', logo: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=64&h=64&fit=crop&crop=center' },
+    { name: 'Wix', logo: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=64&h=64&fit=crop&crop=center' },
+    { name: 'Etsy', logo: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=64&h=64&fit=crop&crop=center' },
+    { name: 'Google Ads', logo: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=64&h=64&fit=crop&crop=center' },
+    { name: 'Meta Ads', logo: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=64&h=64&fit=crop&crop=center' },
+    { name: 'Klaviyo', logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=64&h=64&fit=crop&crop=center' },
+    { name: 'Canva', logo: 'https://images.unsplash.com/photo-1561736778-92e52a7769ef?w=64&h=64&fit=crop&crop=center' },
+    { name: 'WordPress', logo: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=64&h=64&fit=crop&crop=center' },
+    { name: 'Mailchimp', logo: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=64&h=64&fit=crop&crop=center' },
+    { name: 'HubSpot', logo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=64&h=64&fit=crop&crop=center' },
+    { name: 'Google Analytics', logo: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=64&h=64&fit=crop&crop=center' },
+    { name: 'Semrush', logo: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=64&h=64&fit=crop&crop=center' }
   ];
 
   return (
@@ -38,14 +38,20 @@ const ToolsSection = () => {
                   <img
                     src={tool.logo}
                     alt={tool.name}
-                    className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-300"
                     onError={(e) => {
-                      // Fallback to text if logo fails to load
-                      e.currentTarget.style.display = 'none';
-                      e.currentTarget.nextElementSibling!.textContent = tool.name.charAt(0);
+                      const target = e.currentTarget;
+                      target.style.display = 'none';
+                      const fallback = target.nextElementSibling as HTMLElement;
+                      if (fallback) {
+                        fallback.style.display = 'flex';
+                        fallback.textContent = tool.name.charAt(0);
+                      }
                     }}
                   />
-                  <div className="hidden w-16 h-16 bg-coral-500 rounded-xl text-white text-2xl font-bold flex items-center justify-center"></div>
+                  <div className="hidden w-16 h-16 bg-coral-500 rounded-xl text-white text-2xl font-bold flex items-center justify-center">
+                    {tool.name.charAt(0)}
+                  </div>
                 </div>
                 <span className="text-sm font-medium text-navy-900 text-center">{tool.name}</span>
               </div>

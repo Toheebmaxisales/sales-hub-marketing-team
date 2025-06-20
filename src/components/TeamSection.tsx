@@ -1,49 +1,45 @@
+
 import { User } from 'lucide-react';
 
 const TeamSection = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Maximillian Toheeb",
+      name: "Ismail Talha",
       role: "Digital Marketing Strategist",
       description: "Specializes in ecommerce growth and conversion optimization with 6+ years of experience.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
     },
     {
       id: 2,
-      name: "Michael Chen",
+      name: "Maximilian Toheeb",
       role: "Web Design Lead",
       description: "Expert in Shopify, Wix, and custom website design with a focus on user experience.",
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
+      name: "Temitope Alani",
       role: "SEO & Content Specialist",
       description: "Drives organic traffic growth through strategic SEO and compelling content creation.",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       id: 4,
-      name: "David Thompson",
+      name: "Samson",
       role: "Shopify Development Expert",
       description: "Builds high-converting Shopify stores and custom solutions for ecommerce success.",
       image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-    },
-    {
-      id: 5,
-      name: "Jessica Martinez",
-      role: "Social Media Manager",
-      description: "Creates engaging social media strategies that drive brand awareness and customer engagement.",
-      image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-    },
-    {
-      id: 6,
-      name: "Alex Kim",
-      role: "PPC & Analytics Specialist",
-      description: "Maximizes ROI through data-driven Google Ads and Facebook advertising campaigns.",
-      image: "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     }
+  ];
+
+  const additionalMembers = [
+    "Wariz Pro",
+    "Folakeprosales",
+    "Fawas",
+    "Basit MKT",
+    "Emmanuel Simon",
+    "Aishat PromMKT"
   ];
 
   return (
@@ -58,7 +54,7 @@ const TeamSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {teamMembers.map((member) => (
             <div
               key={member.id}
@@ -90,6 +86,24 @@ const TeamSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 className="font-poppins font-semibold text-2xl text-navy-900 mb-6 text-center">
+            Additional Team Members
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {additionalMembers.map((member, index) => (
+              <div
+                key={index}
+                className="text-center p-3 bg-gray-50 rounded-lg hover:bg-coral-50 transition-colors duration-300"
+              >
+                <span className="text-navy-900 font-medium text-sm">
+                  {member}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="text-center mt-12">

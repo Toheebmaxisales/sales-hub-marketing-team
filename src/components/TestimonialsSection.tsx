@@ -9,7 +9,7 @@ const TestimonialsSection = () => {
       company: 'Shopify Store',
       content: 'The Saleshub team transformed our online store completely. Sales increased by 200% in just 3 months, and our brand now looks incredibly professional. Their attention to detail is outstanding!',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+      image: 'https://images.unsplash.com/photo-1494790108755-2616c64c2b8c?w=150&h=150&fit=crop&crop=face'
     },
     {
       name: 'Marcus Rodriguez',
@@ -17,7 +17,7 @@ const TestimonialsSection = () => {
       company: 'Design Studio',
       content: 'Working with Saleshub was a game-changer for our agency. They helped us streamline our marketing processes and our client acquisition has never been better. Highly recommend their expertise!',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face'
     },
     {
       name: 'Emma Thompson',
@@ -25,7 +25,7 @@ const TestimonialsSection = () => {
       company: 'Handmade Jewelry',
       content: 'I was struggling to get visibility on Etsy until I found Saleshub. They optimized my listings and taught me marketing strategies that boosted my sales by 400%. Amazing results!',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1494790108755-2616c64c2b8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face'
     },
     {
       name: 'David Kim',
@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
       company: 'Tech Startup',
       content: 'The digital marketing strategy they created for our startup was incredible. We went from zero to 10k followers in 6 months and generated over 500 qualified leads. Best investment we made!',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face'
     },
     {
       name: 'Lisa Anderson',
@@ -41,7 +41,7 @@ const TestimonialsSection = () => {
       company: 'Wellness Brand',
       content: 'Saleshub helped me build a beautiful website and create email funnels that convert. My business has grown from a side hustle to a full-time income. They truly understand online business!',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face'
     },
     {
       name: 'James Wilson',
@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
       company: '5 Locations',
       content: 'Local marketing was always a challenge until we partnered with Saleshub. They helped us dominate local search results and our reservations increased by 50% across all locations.',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face'
     }
   ];
 

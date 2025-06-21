@@ -87,6 +87,7 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Our Services</h3>
             <ul className="space-y-2 text-gray-400">
               <li>Digital Marketing</li>
+              <li>Social Media Marketing</li>
               <li>Shopify/Etsy/Wix Promotion</li>
               <li>Website Design</li>
               <li>SEO & Traffic Growth</li>
@@ -96,7 +97,20 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8">
+        {/* Reach Out To Us Section */}
+        <div className="mt-12 pt-8 border-t border-gray-800">
+          <div className="text-center mb-8">
+            <h3 className="font-semibold text-lg mb-4">Reach Out To Us</h3>
+            <a 
+              href="mailto:Saleshubsmarketingteam@gmail.com"
+              className="text-coral-500 hover:text-coral-400 transition-colors text-lg font-medium"
+            >
+              Saleshubsmarketingteam@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
               © {currentYear} Saleshub Marketing Team. All rights reserved.

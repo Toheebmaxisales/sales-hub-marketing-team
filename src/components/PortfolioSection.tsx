@@ -7,7 +7,7 @@ const PortfolioSection = () => {
       title: 'Ecommerce Store Redesign',
       category: 'Shopify Design',
       description: 'Complete redesign of a fashion ecommerce store resulting in 150% increase in conversions.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://i.postimg.cc/VLdxpTx3/WEB-design.png',
       results: ['150% Conversion Increase', '300% Traffic Growth', '45% Lower Bounce Rate'],
       tags: ['Shopify', 'UX Design', 'Conversion Optimization']
     },
@@ -28,10 +28,10 @@ const PortfolioSection = () => {
       tags: ['Branding', 'Web Design', 'Luxury']
     },
     {
-      title: 'Etsy Store Optimization',
+      title: 'Etsy Store Optimization and Marketing result',
       category: 'Ecommerce Growth',
       description: 'SEO and listing optimization for handmade jewelry store on Etsy marketplace.',
-      image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://i.postimg.cc/2Sd2K7Ss/salu-sales-2025.png',
       results: ['400% Sales Increase', 'Top 10 Rankings', '50+ 5-Star Reviews'],
       tags: ['Etsy SEO', 'Product Optimization', 'Marketplace']
     },

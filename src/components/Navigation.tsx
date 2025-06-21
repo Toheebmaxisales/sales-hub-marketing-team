@@ -18,7 +18,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="font-poppins font-bold text-xl text-navy-900">
-            Saleshub Marketing
+            Sales Hub Marketing Team
           </div>
           
           {/* Desktop Navigation */}
@@ -48,7 +48,13 @@ const Navigation = () => {
               Testimonials
             </button>
             <Button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => {
+                // Scroll to footer where the email is located
+                const footer = document.querySelector('footer');
+                if (footer) {
+                  footer.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               className="bg-coral-500 hover:bg-coral-600 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:scale-105"
             >
               Let's Talk
@@ -97,7 +103,14 @@ const Navigation = () => {
                 Testimonials
               </button>
               <Button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => {
+                  // Scroll to footer where the email is located
+                  const footer = document.querySelector('footer');
+                  if (footer) {
+                    footer.scrollIntoView({ behavior: 'smooth' });
+                  }
+                  setIsMenuOpen(false);
+                }}
                 className="bg-coral-500 hover:bg-coral-600 text-white px-6 py-2 rounded-full font-medium w-full mt-2"
               >
                 Let's Talk

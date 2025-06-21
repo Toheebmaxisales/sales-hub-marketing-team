@@ -1,4 +1,3 @@
-
 import { User } from 'lucide-react';
 
 const TeamSection = () => {
@@ -8,28 +7,28 @@ const TeamSection = () => {
       name: "Ismail Talha",
       role: "Digital Marketing Strategist",
       description: "Specializes in ecommerce growth and conversion optimization with 6+ years of experience.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+      image: "https://i.postimg.cc/bwFx2pYg/Ismail.png"
     },
     {
       id: 2,
       name: "Maximilian Toheeb",
       role: "Web Design Lead",
       description: "Expert in Shopify, Wix, and custom website design with a focus on user experience.",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://i.postimg.cc/wMKFRHVZ/Maximillian-Toheeb.jpg"
     },
     {
       id: 3,
       name: "Temitope Alani",
       role: "SEO & Content Specialist",
       description: "Drives organic traffic growth through strategic SEO and compelling content creation.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://i.postimg.cc/Gphfbc7j/Temitope-Alani.jpg"
     },
     {
       id: 4,
       name: "Samson",
       role: "Shopify Development Expert",
       description: "Builds high-converting Shopify stores and custom solutions for ecommerce success.",
-      image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://i.postimg.cc/mrCP2sPt/Samson.png"
     }
   ];
 

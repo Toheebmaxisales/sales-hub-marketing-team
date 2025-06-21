@@ -1,18 +1,17 @@
-
 const ToolsSection = () => {
   const tools = [
-    { name: 'Shopify', logo: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=64&h=64&fit=crop&crop=center' },
-    { name: 'Wix', logo: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=64&h=64&fit=crop&crop=center' },
-    { name: 'Etsy', logo: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=64&h=64&fit=crop&crop=center' },
-    { name: 'Google Ads', logo: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=64&h=64&fit=crop&crop=center' },
-    { name: 'Meta Ads', logo: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=64&h=64&fit=crop&crop=center' },
-    { name: 'Klaviyo', logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=64&h=64&fit=crop&crop=center' },
-    { name: 'Canva', logo: 'https://images.unsplash.com/photo-1561736778-92e52a7769ef?w=64&h=64&fit=crop&crop=center' },
-    { name: 'WordPress', logo: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=64&h=64&fit=crop&crop=center' },
-    { name: 'Mailchimp', logo: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=64&h=64&fit=crop&crop=center' },
-    { name: 'HubSpot', logo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=64&h=64&fit=crop&crop=center' },
-    { name: 'Google Analytics', logo: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=64&h=64&fit=crop&crop=center' },
-    { name: 'Semrush', logo: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=64&h=64&fit=crop&crop=center' }
+    { name: 'Shopify', logo: 'https://i.postimg.cc/fTHsVyXP/download-removebg-preview.png' },
+    { name: 'Wix', logo: 'https://i.postimg.cc/0jwSbFXW/WIx-Icon.png' },
+    { name: 'Etsy', logo: 'https://i.postimg.cc/xjh36LwQ/Etsy-Icon.png' },
+    { name: 'Google Ads', logo: 'https://i.postimg.cc/CL8HXz0q/google-ads-logo-6f18.png' },
+    { name: 'Meta Ads', logo: 'https://i.postimg.cc/cJxRvhnR/Meta-ADs-icon.png' },
+    { name: 'Klaviyo', logo: 'https://i.postimg.cc/d1XrSKS6/Klaviyo-Icon.png' },
+    { name: 'Canva', logo: 'https://i.postimg.cc/ZK6pj2PP/Canva-Icon.png' },
+    { name: 'WordPress', logo: 'https://i.postimg.cc/R0pHNB9m/WP-icon.png' },
+    { name: 'Mailchimp', logo: 'https://i.postimg.cc/PxL8DRrw/mailchimp-icon.png' },
+    { name: 'HubSpot', logo: 'https://i.postimg.cc/XJTBkkpD/Hub-Spot-Simbolo-3806538256.jpg' },
+    { name: 'Google Analytics', logo: 'https://i.postimg.cc/9QWRbMQV/google-analytics-logo-icon-169085-2983389703.png' },
+    { name: 'Semrush', logo: 'https://i.postimg.cc/MTjvHfd0/semrush-new2210-2329262208.jpg' }
   ];
 
   return (
@@ -38,7 +37,7 @@ const ToolsSection = () => {
                   <img
                     src={tool.logo}
                     alt={tool.name}
-                    className="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-full object-contain rounded-lg group-hover:scale-110 transition-transform duration-300"
                     onError={(e) => {
                       const target = e.currentTarget;
                       target.style.display = 'none';

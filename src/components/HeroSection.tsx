@@ -34,7 +34,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl">
-              We're the Saleshub Marketing Team - a results-driven digital marketing and website design team focused on helping creators, entrepreneurs, and ecommerce brands succeed online.
+              We're the Sales Hub Marketing Team - a results-driven digital marketing and website design team focused on helping creators, entrepreneurs, and ecommerce brands succeed online.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -69,12 +69,23 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right Column - Image */}
-          <div className="relative animate-slide-in-right">
+          {/* Right Column - Images */}
+          <div className="relative animate-slide-in-right space-y-6">
+            {/* First Image Banner */}
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                 alt="Digital marketing team working"
+                className="rounded-2xl shadow-2xl w-full h-auto"
+              />
+              <div className="absolute inset-0 bg-coral-500/20 rounded-2xl"></div>
+            </div>
+
+            {/* Second Image Banner */}
+            <div className="relative">
+              <img
+                src="https://i.postimg.cc/LX3scVvb/Sales-dashbaord-2024-shopify.png"
+                alt="Sales dashboard 2024 Shopify results"
                 className="rounded-2xl shadow-2xl w-full h-auto"
               />
               <div className="absolute inset-0 bg-coral-500/20 rounded-2xl"></div>

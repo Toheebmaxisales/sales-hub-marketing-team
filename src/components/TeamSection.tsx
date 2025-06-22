@@ -38,7 +38,9 @@ const TeamSection = () => {
     "Fawas",
     "Basit MKT",
     "Emmanuel Simon",
-    "Aishat PromMKT"
+    "Aishat PromMKT",
+    "Adeyemi",
+    "Maxi Taofeeq"
   ];
 
   return (

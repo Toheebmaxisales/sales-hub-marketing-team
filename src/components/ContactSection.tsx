@@ -5,9 +5,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
+import { sendContactEmail, type ContactFormData } from '@/services/emailjs';
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<ContactFormData>({
     name: '',
     email: '',
     business: '',
@@ -25,15 +26,26 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      await sendContactEmail(formData);
+      
       toast({
         title: "Message sent successfully!",
         description: "We'll get back to you within 24 hours.",
       });
+      
+      // Reset form after successful submission
       setFormData({ name: '', email: '', business: '', message: '' });
+    } catch (error) {
+      console.error('Form submission error:', error);
+      
+      toast({
+        title: "Failed to send message",
+        description: "There was an error sending your message. Please try again or contact us directly.",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (

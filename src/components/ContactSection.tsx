@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -24,6 +23,7 @@ const ContactSection = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    console.log('Form submitted with data:', formData);
     setIsSubmitting(true);
 
     try {
@@ -41,7 +41,8 @@ const ContactSection = () => {
       
       toast({
         title: "Failed to send message",
-        description: "There was an error sending your message. Please try again or contact us directly.",
+        description: error instanceof Error ? error.message : "There was an error sending your message. Please try again or contact us directly.",
+        variant: "destructive"
       });
     } finally {
       setIsSubmitting(false);

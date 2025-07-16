@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 
 const ServicesSection = () => {
@@ -32,6 +31,12 @@ const ServicesSection = () => {
       description: 'Strategic funnel design and email campaigns that nurture leads and convert prospects into loyal customers.',
       features: ['Sales Funnel Design', 'Email Automation', 'Lead Magnets', 'Customer Retention'],
       gradient: 'from-yellow-500 to-orange-500'
+    },
+    {
+      title: 'GMB Optimization & Sales Funnel',
+      description: 'Google My Business profile optimization and review management to boost local visibility and drive sales through strategic funnels.',
+      features: ['Google My Business Setup', 'Review Management', 'Local SEO Optimization', 'Sales Funnel Integration'],
+      gradient: 'from-indigo-500 to-purple-600'
     },
     {
       title: 'Analytics & Reporting',

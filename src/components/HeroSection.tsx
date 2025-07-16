@@ -1,16 +1,10 @@
 
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const scrollToServices = () => {
-    const element = document.getElementById('services');
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -38,14 +32,13 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Link to="/contact">
+                <Button className="bg-coral-500 hover:bg-coral-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-xl hover:scale-105 animate-bounce-subtle">
+                  Let's Talk Business
+                </Button>
+              </Link>
               <Button
-                onClick={scrollToContact}
-                className="bg-coral-500 hover:bg-coral-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-xl hover:scale-105 animate-bounce-subtle"
-              >
-                Let's Talk Business
-              </Button>
-              <Button
-                onClick={scrollToServices}
+                onClick={() => scrollToSection('services')}
                 variant="outline"
                 className="border-2 border-white text-white hover:bg-white hover:text-navy-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300"
               >

@@ -5,20 +5,20 @@ const TeamSection = () => {
     {
       id: 1,
       name: "Ismail Talha",
-      role: "Digital Marketing Strategist",
+      role: "Digital Marketing Strategist", 
       description: "Specializes in ecommerce growth and conversion optimization with 6+ years of experience.",
       image: "https://i.postimg.cc/bwFx2pYg/Ismail.png"
     },
     {
       id: 2,
-      name: "Maximilian Toheeb",
+      name: "Maximillian Toheeb",
       role: "Web Design Lead",
       description: "Expert in Shopify, Wix, and custom website design with a focus on user experience.",
       image: "https://i.postimg.cc/wMKFRHVZ/Maximillian-Toheeb.jpg"
     },
     {
       id: 3,
-      name: "Temitope Alani",
+      name: "Temitope Alani (LEAMZYGROWTHTECH)",
       role: "SEO & Content Specialist",
       description: "Drives organic traffic growth through strategic SEO and compelling content creation.",
       image: "https://i.postimg.cc/Gphfbc7j/Temitope-Alani.jpg"
@@ -40,7 +40,8 @@ const TeamSection = () => {
     "Emmanuel Simon",
     "Aishat PromMKT",
     "Adeyemi",
-    "Maxi Taofeeq"
+    "Maxi Taofeeq",
+    "Rotimos Sales"
   ];
 
   return (

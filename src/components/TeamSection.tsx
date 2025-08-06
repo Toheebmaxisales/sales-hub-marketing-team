@@ -28,7 +28,7 @@ const TeamSection = () => {
       name: "Samson",
       role: "Shopify Development Expert",
       description: "Builds high-converting Shopify stores and custom solutions for ecommerce success.",
-      image: "https://i.postimg.cc/mrCP2sPt/Samson.png"
+      image: "/lovable-uploads/1026e183-c977-4a88-a2e0-6b91e5a35ebb.png"
     }
   ];
 

@@ -29,6 +29,13 @@ const TeamSection = () => {
       role: "Shopify Development Expert",
       description: "Builds high-converting Shopify stores and custom solutions for ecommerce success.",
       image: "/lovable-uploads/1026e183-c977-4a88-a2e0-6b91e5a35ebb.png"
+    },
+    {
+      id: 5,
+      name: "Ayinde Oyeniyi",
+      role: "Business Development Specialist",
+      description: "Drives strategic partnerships and business growth initiatives with proven expertise.",
+      image: "/lovable-uploads/3c7d54a7-3ebd-43f1-b011-49a59154b3ca.png"
     }
   ];
 

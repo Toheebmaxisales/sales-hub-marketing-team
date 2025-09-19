@@ -97,18 +97,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Reach Out To Us Section */}
-        <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="text-center mb-8">
-            <h3 className="font-semibold text-lg mb-4">Reach Out To Us</h3>
-            <a 
-              href="mailto:Saleshubsmarketingteam@gmail.com"
-              className="text-coral-500 hover:text-coral-400 transition-colors text-lg font-medium"
-            >
-              Saleshubsmarketingteam@gmail.com
-            </a>
-          </div>
-        </div>
 
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">

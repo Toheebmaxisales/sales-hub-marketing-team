@@ -12,6 +12,7 @@ const ContactForm = () => {
     name: '',
     email: '',
     business: '',
+    phone: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -36,7 +37,7 @@ const ContactForm = () => {
       });
       
       // Reset form after successful submission
-      setFormData({ name: '', email: '', business: '', message: '' });
+      setFormData({ name: '', email: '', business: '', phone: '', message: '' });
     } catch (error) {
       console.error('Form submission error:', error);
       
@@ -102,6 +103,22 @@ const ContactForm = () => {
               onChange={handleInputChange}
               className="w-full"
               placeholder="Your business name or website"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="phone" className="block text-sm font-medium text-navy-900 mb-2">
+              Phone/WhatsApp *
+            </label>
+            <Input
+              id="phone"
+              name="phone"
+              type="tel"
+              value={formData.phone}
+              onChange={handleInputChange}
+              required
+              className="w-full"
+              placeholder="Your phone or WhatsApp number"
             />
           </div>
 

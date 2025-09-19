@@ -17,6 +17,7 @@ export interface ContactFormData {
   name: string;
   email: string;
   business: string;
+  phone: string;
   message: string;
 }
 
@@ -31,6 +32,7 @@ export const sendContactEmail = async (formData: ContactFormData): Promise<void>
       from_name: formData.name,
       from_email: formData.email,
       business_name: formData.business,
+      phone_number: formData.phone,
       message: formData.message,
       to_name: 'Support Team', // Add recipient name
       reply_to: formData.email, // Add reply-to field

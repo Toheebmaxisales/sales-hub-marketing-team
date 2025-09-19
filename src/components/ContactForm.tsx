@@ -5,7 +5,14 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
-import { sendContactEmail, type ContactFormData } from '@/services/emailjs';
+
+interface ContactFormData {
+  name: string;
+  email: string;
+  business: string;
+  phone: string;
+  message: string;
+}
 
 const ContactForm = () => {
   const [formData, setFormData] = useState<ContactFormData>({
@@ -25,25 +32,34 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted with data:', formData);
     setIsSubmitting(true);
 
     try {
-      await sendContactEmail(formData);
-      
-      toast({
-        title: "Message sent successfully!",
-        description: "We'll get back to you within 24 hours.",
+      const response = await fetch('https://formspree.io/f/xvgbebpj', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-      
-      // Reset form after successful submission
-      setFormData({ name: '', email: '', business: '', phone: '', message: '' });
+
+      if (response.ok) {
+        toast({
+          title: "Message sent successfully!",
+          description: "We'll get back to you within 24 hours.",
+        });
+        
+        // Reset form after successful submission
+        setFormData({ name: '', email: '', business: '', phone: '', message: '' });
+      } else {
+        throw new Error('Failed to send message');
+      }
     } catch (error) {
       console.error('Form submission error:', error);
       
       toast({
         title: "Failed to send message",
-        description: error instanceof Error ? error.message : "There was an error sending your message. Please try again or contact us directly.",
+        description: "There was an error sending your message. Please try again or contact us directly.",
         variant: "destructive"
       });
     } finally {

@@ -48,7 +48,8 @@ const TeamSection = () => {
     "Aishat PromMKT",
     "Adeyemi",
     "Maxi Taofeeq",
-    "Rotimos Sales"
+    "Rotimos Sales",
+    "Robiliink Digital"
   ];
 
   return (

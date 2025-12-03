@@ -49,7 +49,8 @@ const TeamSection = () => {
     "Adeyemi",
     "Maxi Taofeeq",
     "Rotimos Sales",
-    "Robiliink Digital"
+    "Robiliink Digital",
+    "Amsal Marketing"
   ];
 
   return (
